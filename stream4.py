@@ -79,7 +79,7 @@ if uploaded_file is not None:
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Perform inference using the model
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path='/home/may/yolov5/runs/train/exp36/weights/best.pt')
+    model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
     
     # Perform inference on the image
     results = model(image, size=352)
